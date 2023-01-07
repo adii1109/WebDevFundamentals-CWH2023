@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h2>this is form tuturial</h2>
+    <!-- form action means where to data store
+        when we work with backend that information find with name tag
+        if want default checked then use checked
+        label tag : when we use label tag for mai id likho.
+    
+    -->
+    <form action="backend.php">
+      <label for="name">Name</label>
+      <div><input type="text" name="MyName" id="name" /></div>
+      <br />
+      <label for="role">Role</label>
+      <div><input type="text" name="MyRole" id="role" /></div>
+      <br />
+      <label for="email">Email</label>
+      <div><input type="email" name="MyEmail" id="email" /></div>
+      <br />
+      <label for="date">Date</label>
+      <div><input type="date" name="MyDate" id="date"/></div>
+      <br />
+      <label for="bonus"> MyBonus</label>
+      <div><input type="number" name="MyBonus" id="bonus"/></div>
+      <br />
+      <label for="areel">Are you Eligble?</label>
+      <div>
+        <input type="checkbox" name="MyEligblty" id="areel" checked />
+      </div>
+      <br />
+      <label for="gender">Gender</label>
+      <div>
+        <label for="male">Male</label> <input type="radio" name="MyGender" id="male" /> 
+        <label for="female">Female 
+      <input type="radio" name="MyGender"id="female"  />Other<input
+          type="radio"
+          name="MyGender" id="gender" 
+        />
+      </div>
+      <br />
+      <label for="wd"> Write About Yourself:</label>
+      <div>
+       <br />
+        <textarea name="Mytextarea" id="wd" cols="30" rows="10"></textarea>
+      </div>
+      <br />
+      <!-- If want default selected use selected -->
+      <label for="car">Car</label>
+      <select name="MyCar" id="car">
+        <option value="Indi">Indica</option>
+        <option value="swf" selected>Swift</option>
+        <option value="Fort">Fortuner</option>
+        <option value="bmw">BMW</option>
+      </select> 
+      <div> <br>
+        <input type="submit" value="Sumbit Now" />
+        <input type="Reset" value="Reset Now" />
+      </div>
+    </form>
+  </body>
+</html>
