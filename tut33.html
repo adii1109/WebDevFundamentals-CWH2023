@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+    <style>
+        body{
+            background-color: black;
+            color:white;
+            margin:0px;
+            padding:0px;
+            
+        }
+        header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600×900') no-repeat center center/cover;
+            position:absolute;
+            content: " ";
+            top: 0%;
+            left:0%;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        section{
+            height: 344px;
+            margin:51px 230px;
+            display: flex;
+            flex-direction: column;
+          
+            align-items: center;
+          
+           
+            justify-content: center;
+        }
+        p{
+            text-align: center;
+        }
+        h1{
+            font-size: 4rem;
+        }
+
+        /* section::after{
+            content:"this is content";
+        } */
+        .navigation{
+            display: flex;
+            font-size: 20px;
+           font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        li{
+            list-style: none;
+            padding:20px 23px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contanct us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>Welcome to coding World</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veritatis alias amet praesentium blanditiis iste sunt ea necessitatibus enim excepturi temporibus, asperiores aliquam illo velit repellat pariatur soluta corrupti earum eligendi ducimus maiores perferendis!
+            </p>
+        </section>
+     
+    
+</body>
+</html>

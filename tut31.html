@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        h1{
+            background-color: tomato;
+            color:black;
+            font-weight: bold;
+            text-align: center;
+        }
+  /*1]     direct child:div>p */
+        /* div > p{ 
+            background-color: yellow;
+        } */
+
+
+
+/* 2]   div + p{
+        for previus parent if div then affect
+        p is next subling of div 
+    }
+    
+    */
+       div + p{
+            background-color: chocolate;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li><P>This is inside paragraph li</P></li>
+                <li> this is well not affect</li>
+            </ul>
+            <p>this is paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+</body>
+</html>

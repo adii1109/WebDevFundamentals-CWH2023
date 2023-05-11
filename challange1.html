@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        header{
+            background-color:#97d742;
+            color:white;
+            margin: 23px 45px;
+            width:33%;
+            text-align: center;
+            
+        }
+        .container{
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin:0px;
+        }
+        #btn{
+            background-color: #97d742;
+            height: 40px;
+            width: 60px;
+            padding:2px 3px;
+            margin:3px 2px;
+            text-align: center;
+            border-radius: 4px;
+        }
+        form{
+            /* background-color:antiquewhite; */
+            height: 33%;
+            width: 33%;
+            margin: 0px;
+            padding:3px 4px;
+            box-sizing: border-box;
+       
+        }
+        input[type="text"]{
+            width: 480px;
+            height: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+        <h1>Contanct form</h1>
+        <p>Please fill all the texts in the fields.</p>
+     </header>
+     <form action="#">
+        <label for="name"> Your Name:</label>
+        <div><input type="text" name="Myname" id="name" placeholder="Your Full name"></div>
+        <br>
+        <label for="email"> Your Email:</label>
+        <div><input type="text" name="Myemail" placeholder="Enter Your email" id="email"></div>
+        <br>
+        <label for="message">Message:</label>
+        <div>
+            <textarea name="Mytextarea" id="message" cols="30" rows="10" placeholder="Your message to use" style="width: 494px; height: 132px;"></textarea>
+        </div>
+        <br>
+        <label for="subject">Subject:</label>
+        <div>
+            <input type="text" name="MYname" id="subject" >
+        </div>
+        <button id="btn">Sent</button>
+
+
+     </form>
+
+    </div>
+ 
+</body>
+</html>

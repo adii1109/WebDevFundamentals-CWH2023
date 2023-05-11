@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment(Float and Clear)</title>
+    <style>
+         *{
+            /* subitem dalane univeral use */
+             box-sizing: border-box;
+            margin:0;
+            padding:0; }
+            
+        body{
+            background-color: antiquewhite;
+        }
+         
+        .container{
+            border: 2px solid sienna;
+            width:900px;
+            margin: 33px auto;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: sandybrown;
+        }
+      
+        .item{
+            background-color:#f7e1d9;
+            border:2px solid blueviolet;
+            padding:12px 3px;
+            margin:12px 3px;
+        }
+        #fruit{
+            float:left;
+            width:48%;
+        }
+        #computer{
+            float:right;
+            width:48%;
+            
+        }
+        #stationaray{
+            /* float:left; */
+            width: 99%;
+            clear:both;
+
+            /* clear left : float left not allowed on me (overlap)
+                clear right
+                clear both;
+            
+            */
+
+        }
+        h3{
+            text-align: center;
+            /* text-align :left
+            /* text-align :right 
+            /* text-align :center
+            
+            
+            */
+        }
+        h1{
+            text-align: center;
+            font-weight: bold;
+            margin:12px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dicta sed ipsa dolorem perspiciatis quo excepturi cum sit porro culpa, quam mollitia illum pariatur amet? Ab odit error quia rem. Assumenda voluptatibus amet laboriosam?</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dicta sed ipsa dolorem perspiciatis quo excepturi cum sit porro culpa, quam mollitia illum pariatur amet? Ab odit error quia rem. Assumenda voluptatibus amet laboriosam?
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo illum quis totam natus non omnis tempore a porro? Exercitationem ab iusto eos architecto, corrupti placeat unde mollitia animi excepturi debitis vero est, vel officia? </p>
+        </div>
+        <div id="stationaray" class="item">
+            <h3>Stationary</h3>
+            <p id="stationaraypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dicta sed ipsa dolorem perspiciatis quo excepturi cum sit porro culpa, quam mollitia illum pariatur amet? Ab odit error quia rem. Assumenda voluptatibus amet laboriosam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis reprehenderit unde quos vero, fugit blanditiis? Pariatur tempora sequi animi, qui sint aliquid quae fugiat odio necessitatibus libero earum, tempore possimus consectetur provident distinctio omnis?</p>
+        </div>
+    </div>
+</body>
+</html>

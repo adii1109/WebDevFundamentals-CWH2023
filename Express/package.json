@@ -1,0 +1,17 @@
+{
+  "name": "addy",
+  "version": "1.0.0",
+  "description": "this is package we created while expoling node ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aditya",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  },
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
+}

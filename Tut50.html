@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function In JavaScript</title>
+</head>
+<body>
+    
+    <script>
+        var str="this is a String";
+        console.log(str);
+
+        //First occurence of A Substring
+        var position=str.indexOf('is');
+
+        //last occurence of A substring
+        position=str.lastIndexOf('is');
+
+        //substing from a string
+        // var substr=str.slice(1,5);
+        var substr1 =str.substr(1,7);
+        console.log(substr1);
+
+
+        //replace
+        // var replace1=str.replace('String','harry');
+        // console.log(replace1);
+
+        //Upper case
+        console.log(str.toUpperCase());
+        //lower case
+        console.log (str.toLowerCase())
+
+        //concat
+        // var newString=str.concat(' New String');
+        // console.log(newString);
+
+        //remove whitespace (NOte: starting and end whitespace remove only not midly)
+        // var strWhitespaces="     this contains       whitespaces      end   ";
+        // console.log(strWhitespaces);
+        // console.log(strWhitespaces.trim());
+
+        // Find char of index
+        var charindex=str.charAt(2);
+        console.log(charindex);
+        
+
+        console.log(str[2]);
+
+
+    </script>
+</body>
+</html>

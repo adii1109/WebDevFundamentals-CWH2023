@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+    <style>
+        .container{
+            background-color: greenyellow;
+        }
+        .box{
+
+            /* 
+      1]      height: 250px;
+            width: 250px;
+            background-color: green;
+            position: relative;
+            animation-name: addy1;
+            animation-duration: 0.7s;
+            animation-iteration-count:1 ;
+
+      2] animation fill mode:
+            
+        1] forward:after complete animation stop thier where end;
+            alternate: complete stop on start;
+      
+       
+        
+        2] animation timing function:
+            ease in : start slow after fast;
+            ease out: start fast end slow;
+            ease in out : slow fast slow
+
+
+        3] animation delay: (after delay animation will start)
+
+        4] animation direction:reverse(animation comes form last to start)
+
+        5] animation shorthand:
+        
+         animation: name duration timing-function delay iteration-count direction fill-mode;
+
+            */
+            height: 250px;
+            width: 250px;
+            background-color: green;
+            position: relative;
+            animation-name: addy2;
+            /* animation-name: addy1; */
+            animation-duration: 8s;
+            animation-iteration-count:1 ;
+            /* animation-fill-mode:alternate;
+            animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+        }
+        @keyframes addy2 {
+            0%{
+                top:0px;
+                left: 0px;
+
+            }
+            25%{
+                top:250px;
+                left:0px
+
+            }
+        
+            75%{
+                top:250px;
+                left:250px;
+            }
+            100%{
+                top:0px;
+                left:250px;
+
+            }
+            
+        }
+        @keyframes addy1{
+            form {
+                width: 200px;
+            }
+
+            to{
+                width: 1400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+    </div>
+</body>
+</html>

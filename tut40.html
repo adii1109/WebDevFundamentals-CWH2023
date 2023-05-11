@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid Tutorial</title>
+    <style>
+        .container{
+            /* inilanizing display as grid  
+        1]        
+            grid-template-columns: 300px 100px 300px ;
+            three coloum create :300px 100px 300px;
+            
+            grid-template-columns: 300px auto 300px;
+            three colume create :auto mains autmatic gate space
+
+
+            grid-template-columns: 1fr 4fr 2fr;
+            size ke 1fr:1part
+            size ka 4part
+            size ke 2part
+            
+            grid-template-columns: repeat(3,auto);
+            this sentence used for when u want 10 colums that time(3 repeat ,width auto);
+
+
+
+            */
+            grid-template-columns: repeat(3,auto);
+            grid-gap:2rem;
+            border:2px solid black;
+            display: grid;
+        }
+        .item{
+            /* height: 100px;
+            width: 100px; */
+            background-color: #ffb3b3;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-9</div>
+    </div>
+</body>
+</html>

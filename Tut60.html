@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarrow Function</title>
+</head>
+<body>
+    <div class="container">
+        This is Aarrow Function Tutorial
+    </div>
+    <script>
+
+        // function greet(){
+        //     console.log('Good Morning');
+        // }
+
+        // Aarrow Function
+//   1]    let greet=()=>{
+    //         console.log('Good Morning');
+    //     }
+    let greet=()=>console.log("Good morning");
+
+        greet();
+
+
+        // setTimeout(() => {
+        //     console.log('We are in the setTimeout')
+        // }, 3000);
+        
+//  2]     let sum=(a,b)=>{
+        //     return(a+b);
+        // }
+
+        // shortcut:
+        // let sum2= (a,b) =>(a+b); //2 or more
+        // let half= a =>a/2;   //one argument only work 
+
+// -----------------------------------------------------------------------------------------------
+
+    let obj1={
+        gretting:"Good Morning",
+         names:['Aditya','Saurabh','Shubham','Prathmesh'],
+        speak(){
+            this.names.forEach((student) =>{
+                console.log(this.gretting + " kukdoo ko "+ student);
+            })
+        }
+    }
+       
+      obj1.speak();
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body{
+            font-family: Aeial,sans-serif;
+            font-size: 20px;
+            padding:0px 20px 30px 0;
+            line-height: 1.4;
+        }
+        .flex-container{
+            display: flex;
+            width: 100%;
+            border: 3px solid black;
+            height: 800px;
+            flex-flow: row wrap;
+            /* cross axis */
+            /* align-content: center; space is not maintain in align content when u wrap; */
+            /* align-items:flex-start; space is maintain in align-item */
+            justify-content:center; /*horziontaly ceter*/
+            align-items: center; /*vertcaly center*/
+            /* justify-content: space-between;
+            justify-content: space-evenly; */
+        }
+        .flex-item{
+            /* margin:10px; */
+            height: 150px;
+            width: 150px;
+            background-color: lightblue;
+            border:2px solid darkblue;
+            text-align: center;
+            font-size: 4em;
+            color:white;
+            font-weight: bold;
+            line-height: 1.4;
+
+        }
+        #flex-item1{
+            background-color: lightcoral;
+            order:1;
+        }
+        #flex-item2{
+            background-color: lightgreen;
+            order: 3;
+        }
+        #flex-item3{
+            background-color: lightpink;
+            
+        }
+        #flex-item4{
+            background-color: lightseagreen;
+        }
+        #flex-item5{
+            background-color: rgb(48, 0, 161);
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item" id="flex-item1">1</div>
+        <div class="flex-item" id="flex-item2">2</div>
+        <div class="flex-item" id="flex-item3">3</div>
+        <div class="flex-item" id="flex-item4">4</div>
+        <div class="flex-item" id="flex-item5">5</div>
+        <div class="flex-item" id="flex-item6">6</div>
+        <div class="flex-item" id="flex-item7">7</div>
+        <div class="flex-item" id="flex-item8">8</div>
+        <div class="flex-item" id="flex-item9">9</div>
+        <div class="flex-item" id="flex-item10">10</div>
+    </div>
+</body>
+</html>

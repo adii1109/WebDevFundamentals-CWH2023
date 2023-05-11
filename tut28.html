@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in Css</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* initiailizing the container as flex box */
+            display: flex;
+/*    1]      flex properties for flex conntainer:
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row;
+            flex-direction: row-reverse; (reverse counting start :means right hand side)
+            flexdirection:row(default value);
+            */
+
+
+/*     2]     when we wrap website that time no wrap for responsive website
+            
+                flex-wrap:wrap reverse
+
+shorthand 1&2 flex-wrap: wrap;
+            shorthand:
+            flex-flow:row wrap (flex-direction and flex-wrap);
+            */
+            /* flex-wrap: wrap;
+            flex-flow: row wrap; */
+
+            /* Justify contant will justify the contant horizontal direction
+            
+      3]     justify contant:center : Element/content will be center  
+             justify-content: space-between  (two box beween only  same space not cornely);
+             justify-content: space-evenly  (all box btween or cornely same space);
+             justify-content: space-around (two corner same space ;and between same space);
+
+             justify-content: center  ;
+             justify-content: space-between;
+             justify-content: space-evenly;
+             justify-content: space-around;
+            
+            */
+
+            /* justify-content: center; */
+            /* 
+            Justify contant will justify the contant Vertically direction
+
+
+       4]    align-items:for vertically center;
+            align-items: flex-end  (lastly);
+            align-items: flex-start (default startingly);
+            align-itms:strecth
+            
+            */
+            /* align-items: stretch;
+            align-items: center; */
+
+
+
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            margin:10px;
+            padding: 3px;
+            border: 2px solid green;
+        }
+        #item-1{
+            /* flex properties for a flex item */
+            /* order:2;  order :40; order  
+    5]        highter value order show last;
+            small value order show first;
+            */
+
+            order:2;
+
+        }
+        #item-2{
+/*  6]         flex-grow:3- when we use wrapping: container will grow 3x than other container */
+            /* flex-grow: 3; 
+    7]    flex basis:220px;
+            when flex-direction is set to row flex-basis:will control width.
+            when flex-directiion is set to  colum flex-basic :control height.
+            
+            
+            */
+            flex-basis: 220px;
+          
+        }
+        #item-3{
+            /* 
+            flex-shrink: 3; -When we use wrapping :container will shirk(small) 3x than other container     */
+            /* flex-shrink: 3; */
+/*   8]         
+        flexshorthand:grow shirk basis
+        flex: 2 2 330px;
+    
+    9] align-self:flex end;
+        align-self:flex-start(default);
+        align-self:center;
+    */
+         align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <H1>This is Flexbox tuturial</H1>
+    <div class="container">
+
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third box</div>
+        <!-- <div class="item" id="item-4">Forth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Six Box</div> -->
+
+    </div>          
+</body>
+</html>

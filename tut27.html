@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border:2px solid black;
+        }
+        #box1{
+            background-color: violet;
+            top:49px;
+            position: relative;
+            /* visibility: hidden;
+            display: none; */
+           
+            /* 
+            visibilty:hidden mai element hidden hota hai and empty space rahate hai.
+            display:none : mai element hidden hota hai and space nahi rahati hai.
+            
+            z-index:z-index will only work  position :relative,sticky,fixed absult:not static(defualt);
+            z-index : many box present which box on top z-index  tell.
+            
+            */
+
+        }
+        #box2{
+            top:34px;
+            background-color: blue;
+            position: relative;
+        }
+        #box3{
+            background-color: orange;
+        }
+        #box4{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.box#box$&*4 : doller means 1 2 3 4 -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

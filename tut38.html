@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Css Transfrom</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+        }
+        .container{
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: burlywood;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: brown;
+            border:2px solid black;
+            border-radius: 8px;
+            height: 400px;
+            width: 400px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .box:hover{
+            font-display: st;
+            /* transform: rotate(360deg); */
+            /* transform: skew(40deg);(rotate 40 degree) */
+            /* transform: scale(2); (increase size by 2x)*/
+            /* transform: translateX(123px) (move towards 123px x direction);
+            transform: translateY(123px); Move towards 123px y direction */
+            /* transform: translate(-200px,-220px); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is Box
+        </div>
+    </div>
+    
+</body>
+</html>

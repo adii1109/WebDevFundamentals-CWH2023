@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope,If-else condition and Swith Case In JavaScript</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+//   1]   var string1="this is String";
+        // var string1="this is String 2";
+        // console.log(string1);
+        //global variable
+        // let a=5;
+        // {  //local variable
+        //     let a=2;
+        //     console.log(a);
+        // }
+        // console.log(a);
+        
+//    2]   /  /CONSTANT VARIABLE : THIS CANT BE CHANGE
+        // const a="This can't be Change";
+        // console.log(a);
+
+//   3]    let  age=18;
+
+        // if(age>18){
+        //     console.log("You can drink");
+        // }
+        // else if(age==18){
+        //     console.log("We can think About YOu")
+        // }
+        // else {
+        //     console.log("YOu can drink  water");
+        // }
+
+
+// 4]   Switch Case Statement:
+
+        const age=45;
+
+        switch (age) {
+            case (42):
+                console.log("the age 42 is correct");
+                break;
+            case (40):
+                console.log("the age 40 is correct");
+                break;
+            case (45):
+                console.log("the age 45  is correct");
+                break;
+        
+            default:
+                console.log("You can't find age is 45");
+                break;
+        }
+    </script>
+</body>
+</html>

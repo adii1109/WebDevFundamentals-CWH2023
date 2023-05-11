@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulating DOM</title>
+  </head>
+  <body>
+    <div id="main" class="container">
+      <ul id="nav">
+        <li>HOme</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>more about us</li>
+        <li>Contact us</li>
+      </ul>
+      <div class="container">
+        <p>This is another container</p>
+      </div>
+    </div>
+    <script>
+        // let main=document.getElementById('main');
+        // console.log(main);
+        // let navbar=document.getElementById('nav');
+        // console.log(navbar);
+        // let para=document.getElementsByClassName('container');
+        // console.log(para);
+
+        //css
+        // let css=document.querySelector('.container');
+        // console.log(css);
+        // let hash=document.querySelector('#nav');
+        // console.log(css);
+
+        let sel=document.querySelectorAll('#nav>li');
+        console.log(sel);
+    </script>
+  </body>
+</html>

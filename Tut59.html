@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time In JS</title>
+</head>
+<body>
+    <div class="container">
+    Current Time <span id="time"></span>
+    </div>
+    <script>
+        console.log("this is time and date tutorial ");
+        let now =Date();
+        console.log(now);
+
+        let dt=new Date(1000);
+        console.log(dt);
+
+        let newDate=new Date("2025-09-30");
+        console.log(newDate);
+
+        // let newDate=new Date(year,month,hours,minutes,seconds,milliseconds)
+        let nG = new Date(3020,4,6,9,3,2,34);
+        console.log(nG);
+
+        let d=nG.getDate();
+        console.log(d);
+        let month=nG.getMonth();
+        console.log(month);
+        let year=nG.getFullYear();
+        console.log(year);
+
+        nG.setDate(12);//setMonth, setYear,setMinute,sethours
+        console.log(nG);
+
+        setInterval(updateTime,1000);
+        function updateTime(){
+            time.innerHTMl = new Date();
+        }
+        </script>
+</body>
+</html>

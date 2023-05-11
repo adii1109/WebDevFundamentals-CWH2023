@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+
+        /* 
+       Position:absulte,static(default) ,relative,fixed ,sticky
+        
+        
+        
+        */
+
+
+        .box{
+            border:2px solid red;
+            height: 150px;
+            width: 150px;
+            margin:4px 0px;
+            display:inline-block;
+            position:absolute;
+           
+
+        }
+        #box3{
+            /* 1 ] position: relative: reletive to its the normal position leave will gap:
+                (all boxes same,all box will down 20px)
+                 position:relative;
+                top:20px;
+
+
+               2] position:absolute: no gap , move towards to parents(reletive to the first person)
+                position static default
+                (all boxes comes towards parent box)
+                #box3{
+                    (box3 will go towards middle,remaining boxes parents box)
+                      right:40px;
+                    bottom:300px;
+                }
+
+               positon fixed: when we scrolling that time we use chat with use position fixed;
+               position sticky :we we scrolling that time chipajata hai use menu .
+            
+            */
+/*            
+         /* position:sticky;
+         top:4px; */ 
+         right:40px;
+         bottom:300px;
+          
+        }
+        .container{
+            border:2x solid black;
+            background-color: khaki;
+            height: 3444px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

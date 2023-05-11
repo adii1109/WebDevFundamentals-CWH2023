@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        /* list style : for remove li bullets
+        when we use  float , parents overflow ho jata hai: use overflow auto;
+        
+        */
+
+        .navbar{
+            background-color: black;
+            border-radius: 5px;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin:10px 15px;
+            padding:2px 2px;
+       
+        }
+        .navbar ul{
+            /* background color overflow: overflow auto */
+            overflow:auto;
+            margin:3px 3px;
+        }
+        .navbar li a{
+            padding:3px 3px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .navbar li a:hover{
+            text-decoration: underline;
+            color:lightslategray;
+        }
+        .search{
+            color:white;
+            float:right;
+            padding:12px  75px;
+        }
+        .navbar input{
+            border:2px solid black;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#"> About</a></li>
+               <li><a href="#"> Servies</a></li>
+               <li><a href="#">Contact us</a></li>
+               <div class="search"><input type="text" name="search" id="search" placeholder="Search the website">
+                </div>
+            </ul>
+        </nav>
+        </nav>
+    </header>
+    
+</body>
+</html>

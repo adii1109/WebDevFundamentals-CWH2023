@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variable/custom Properties</title>
+    <style>
+        :root{/* 
+     2]  root means global       
+            
+            
+            */
+            --primary-color:rgb(255, 181, 255);
+            --danger-color:red;
+            --maxw:500px;
+        }
+
+
+
+        .box{
+/*   1]          css variable: 
+            --box-color:rgb(255, 181, 255); (local variable)
+            
+            */
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            border:2px solid yellow;
+            margin:2px 9px;
+            box-shadow: 2px 2px var(--danger-color);
+            
+        }
+        .container{
+            display: flex;
+            background-color: var(--primary-color);
+            align-items: center;
+            justify-content: center;
+            max-width:var(--maxw);
+            background-color: blanchedalmond;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
